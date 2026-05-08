@@ -19,3 +19,6 @@ require golang.org/x/sync v0.1.0 // indirect
 //   - Studying connection pool behavior (puddle v2) and how MaxConns interacts
 //     with query cancellation under load.
 //   - TODO: experiment with custom type mapping for domain types.
+//   - TODO: investigate pgx's default query exec mode (SimpleProtocol vs
+//     ExtendedProtocol) and whether switching the default impacts performance
+//     in my test workloads with many small repeated queries.
