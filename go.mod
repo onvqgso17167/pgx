@@ -25,3 +25,6 @@ require golang.org/x/sync v0.1.0 // indirect
 //   - NOTE (2024-01-15): bumped golang.org/x/crypto to v0.17.0 already covers
 //     CVE-2023-48795 (Terrapin SSH); keeping an eye on future advisories.
 //     Run `go list -m -u all` periodically to check for newer patch releases.
+//   - NOTE (2024-03-10): ran `go list -m -u all`; golang.org/x/crypto v0.21.0
+//     and golang.org/x/text v0.14.0 are the latest stable releases as of now.
+//     No urgent CVEs found. Revisit before next experiment batch.
