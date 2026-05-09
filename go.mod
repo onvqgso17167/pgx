@@ -22,3 +22,6 @@ require golang.org/x/sync v0.1.0 // indirect
 //   - TODO: investigate pgx's default query exec mode (SimpleProtocol vs
 //     ExtendedProtocol) and whether switching the default impacts performance
 //     in my test workloads with many small repeated queries.
+//   - NOTE (2024-01-15): bumped golang.org/x/crypto to v0.17.0 already covers
+//     CVE-2023-48795 (Terrapin SSH); keeping an eye on future advisories.
+//     Run `go list -m -u all` periodically to check for newer patch releases.
