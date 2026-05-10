@@ -6,7 +6,7 @@ require (
 	github.com/jackc/pgpassfile v1.0.0
 	github.com/jackc/pgservicefile v0.0.0-20231201235250-de7065d787a5
 	github.com/jackc/puddle/v2 v2.2.1
-	golang.org/x/crypto v0.17.0
+	golang.org/x/crypto v0.21.0
 	golang.org/x/text v0.14.0
 )
 
@@ -28,3 +28,5 @@ require golang.org/x/sync v0.1.0 // indirect
 //   - NOTE (2024-03-10): ran `go list -m -u all`; golang.org/x/crypto v0.21.0
 //     and golang.org/x/text v0.14.0 are the latest stable releases as of now.
 //     No urgent CVEs found. Revisit before next experiment batch.
+//   - NOTE (2024-03-18): bumped golang.org/x/crypto to v0.21.0 as noted above.
+//     Confirmed `go mod tidy` passes cleanly after the bump.
